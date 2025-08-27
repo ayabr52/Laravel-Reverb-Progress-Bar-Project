@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.progress{
+    width: 70%;
+}
+
+#progress-bar{
+   transition: width 1.5s ease-in-out;
+}
