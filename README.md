@@ -6,7 +6,35 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+🎯 Laravel Reverb Progress Bar Project
+This project showcases a real-time progress bar powered by Laravel Reverb and Broadcasting, triggered via a custom Artisan command.
 
+⚙️ Features
+Custom Artisan command:
+
+bash
+php artisan app:pro --prores=value
+This command broadcasts the progress value to the frontend.
+
+Real-time updates using Laravel Broadcasting and Reverb.
+
+Interactive UI that reflects progress instantly without page reloads.
+
+📡 How It Works
+Running the app:pro command triggers a Laravel event with the progress value.
+
+The event is broadcasted over a Reverb channel.
+
+The frontend listens for the event and updates the progress bar dynamically.
+
+🛠️ Tech Stack
+Laravel 10+
+
+Laravel Reverb
+
+Laravel Broadcasting
+
+JavaScript (with Laravel Echo) .
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
